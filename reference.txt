@@ -1,0 +1,7 @@
+ ----------- FIFA website ----------- 
+
+https://www.fifa.com/the-best-fifa-football-awards/news/nominees-for-the-best-fifa-football-awardstm-2020-revealed
+
+----------- dataset ----------- 
+
+https://www.kaggle.com/stefanoleone992/fifa-20-complete-player-dataset
