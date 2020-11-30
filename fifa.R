@@ -1,4 +1,4 @@
-install.packages("tidyverse")
+#install.packages("tidyverse")
 library(tidyverse)
 
 # read csv file 
@@ -58,4 +58,42 @@ top_2018$year <- 2018
 top_2019$year <- 2019
 top_2020$year <- 2020
 
+#remove unused column
+top_2015 <- subset( top_2015, select = -c(player_url, age, height_cm, dob, weight_kg,
+                                          value_eur, wage_eur, player_positions, potential, international_reputation,
+                                          weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur,
+                                          player_tags, team_jersey_number, loaned_from, joined, contract_valid_until,
+                                          nation_position, nation_jersey_number, gk_diving:rb))
+
+top_2016 <- subset( top_2016, select = -c(player_url, age, height_cm, dob, weight_kg,
+                                          value_eur, wage_eur, player_positions, potential, international_reputation,
+                                          weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur,
+                                          player_tags, team_jersey_number, loaned_from, joined, contract_valid_until,
+                                          nation_position, nation_jersey_number, gk_diving:rb))
+
+top_2017 <- subset( top_2017, select = -c(player_url, age, height_cm, dob, weight_kg,
+                                          value_eur, wage_eur, player_positions, potential, international_reputation,
+                                          weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur,
+                                          player_tags, team_jersey_number, loaned_from, joined, contract_valid_until,
+                                          nation_position, nation_jersey_number, gk_diving:rb))
+
+top_2018 <- subset( top_2018, select = -c(player_url, age, height_cm, dob, weight_kg,
+                                          value_eur, wage_eur, player_positions, potential, international_reputation,
+                                          weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur,
+                                          player_tags, team_jersey_number, loaned_from, joined, contract_valid_until,
+                                          nation_position, nation_jersey_number, gk_diving:rb))
+
+top_2019 <- subset( top_2019, select = -c(player_url, age, height_cm, dob, weight_kg,
+                                          value_eur, wage_eur, player_positions, potential, international_reputation,
+                                          weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur,
+                                          player_tags, team_jersey_number, loaned_from, joined, contract_valid_until,
+                                          nation_position, nation_jersey_number, gk_diving:rb))
+
+top_2020 <- subset( top_2020, select = -c(player_url, age, height_cm, dob, weight_kg,
+                                          value_eur, wage_eur, player_positions, potential, international_reputation,
+                                          weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur,
+                                          player_tags, team_jersey_number, loaned_from, joined, contract_valid_until,
+                                          nation_position, nation_jersey_number, gk_diving:rb))
+
+str(top_2020)
 
