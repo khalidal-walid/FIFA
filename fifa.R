@@ -94,6 +94,11 @@ top_2020 <- subset( top_2020, select = -c(player_url, age, height_cm, dob, weigh
                                           weak_foot, skill_moves, work_rate, body_type, real_face, release_clause_eur,
                                           player_tags, team_jersey_number, loaned_from, joined, contract_valid_until,
                                           nation_position, nation_jersey_number, gk_diving:rb))
-
-str(top_2020)
-
+#export table
+library("readr")
+write_csv(top_2015, path = "/Users/tengku/Desktop/top_2015.csv")
+write_csv(top_2016, path = "/Users/tengku/Desktop/top_2016.csv")
+write_csv(top_2017, path = "/Users/tengku/Desktop/top_2017.csv")
+write_csv(top_2018, path = "/Users/tengku/Desktop/top_2018.csv")
+write_csv(top_2019, path = "/Users/tengku/Desktop/top_2019.csv")
+write_csv(top_2020, path = "/Users/tengku/Desktop/top_2020.csv")

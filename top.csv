@@ -1,0 +1,63 @@
+sofifa_id,short_name,long_name,nationality,club,overall,preferred_foot,team_position,pace,shooting,passing,dribbling,defending,physic,year
+158023,L. Messi,Lionel Andrés Messi Cuccittini,Argentina,FC Barcelona,94,Left,RW,87,92,92,96,39,66,2020
+20801,Cristiano Ronaldo,Cristiano Ronaldo dos Santos Aveiro,Portugal,Juventus,93,Right,LW,90,93,82,89,35,78,2020
+190871,Neymar Jr,Neymar da Silva Santos Junior,Brazil,Paris Saint-Germain,92,Right,CAM,91,85,87,95,32,58,2020
+192985,K. De Bruyne,Kevin De Bruyne,Belgium,Manchester City,91,Right,RCM,76,86,92,86,61,78,2020
+203376,V. van Dijk,Virgil van Dijk,Netherlands,Liverpool,90,Right,LCB,77,60,70,71,90,86,2020
+209331,M. Salah,Mohamed  Salah Ghaly,Egypt,Liverpool,90,Left,RW,93,86,81,89,45,74,2020
+231747,K. Mbappé,Kylian Mbappé,France,Paris Saint-Germain,89,Right,RW,96,84,78,90,39,75,2020
+155862,Sergio Ramos,Sergio Ramos García,Spain,Real Madrid,89,Right,LCB,72,68,75,73,87,85,2020
+188545,R. Lewandowski,Robert Lewandowski,Poland,FC Bayern München,89,Right,ST,77,87,74,85,41,82,2020
+208722,S. Mané,Sadio Mané,Senegal,Liverpool,88,Right,LW,94,83,77,89,44,74,2020
+189509,Thiago,Thiago Alcântara do Nascimento,Spain,FC Bayern München,87,Right,CDM,69,74,85,90,69,63,2020
+20801,Cristiano Ronaldo,Cristiano Ronaldo dos Santos Aveiro,Portugal,Juventus,94,Right,LW,90,93,81,89,35,79,2019
+158023,L. Messi,Lionel Andrés Messi Cuccittini,Argentina,FC Barcelona,94,Left,RW,88,91,88,96,32,61,2019
+190871,Neymar Jr,Neymar da Silva Santos Junior,Brazil,Paris Saint-Germain,92,Right,CAM,92,84,83,95,32,59,2019
+192985,K. De Bruyne,Kevin De Bruyne,Belgium,Manchester City,91,Right,RCM,77,86,92,87,60,78,2019
+155862,Sergio Ramos,Sergio Ramos García,Spain,Real Madrid,91,Right,LCB,75,63,71,71,91,84,2019
+188545,R. Lewandowski,Robert Lewandowski,Poland,FC Bayern München,90,Right,ST,78,89,75,85,41,82,2019
+209331,M. Salah,Mohamed  Salah Ghaly,Egypt,Liverpool,88,Left,RW,92,84,79,89,45,72,2019
+231747,K. Mbappé,Kylian Mbappé,France,Paris Saint-Germain,87,Right,RW,96,81,79,89,39,72,2019
+208722,S. Mané,Sadio Mané,Senegal,Liverpool,86,Right,LW,94,80,76,87,42,73,2019
+189509,Thiago,Thiago Alcântara do Nascimento,Spain,FC Bayern München,86,Right,CDM,73,74,84,90,67,63,2019
+203376,V. van Dijk,Virgil van Dijk,Netherlands,Liverpool,85,Right,LCB,71,60,67,70,85,84,2019
+20801,Cristiano Ronaldo,Cristiano Ronaldo dos Santos Aveiro,Portugal,Real Madrid,94,Right,LW,90,93,82,90,33,80,2018
+158023,L. Messi,Lionel Andrés Messi Cuccittini,Argentina,FC Barcelona,93,Left,RW,89,90,86,96,26,61,2018
+190871,Neymar,Neymar da Silva Santos Junior,Brazil,Paris Saint-Germain,92,Right,LW,92,84,79,95,30,60,2018
+188545,R. Lewandowski,Robert Lewandowski,Poland,FC Bayern München,91,Right,ST,81,88,75,86,38,82,2018
+155862,Sergio Ramos,Sergio Ramos García,Spain,Real Madrid,90,Right,LCB,76,63,71,71,88,83,2018
+192985,K. De Bruyne,Kevin De Bruyne,Belgium,Manchester City,89,Right,RCM,75,84,88,85,45,75,2018
+189509,Thiago,Thiago Alcântara do Nascimento,Spain,FC Bayern München,88,Right,RDM,72,75,85,90,62,63,2018
+208722,S. Mané,Sadio Mané,Senegal,Liverpool,84,Right,LW,93,78,75,85,36,75,2018
+231747,K. Mbappé,Kylian Mbappé,France,Paris Saint-Germain,83,Right,RW,90,80,74,85,47,74,2018
+203376,V. van Dijk,Virgil van Dijk,Netherlands,Southampton,83,Right,RCB,73,60,67,69,83,85,2018
+209331,M. Salah,Mohamed  Salah Ghaly,Egypt,Liverpool,83,Left,RW,93,73,74,87,45,66,2018
+20801,Cristiano Ronaldo,Cristiano Ronaldo dos Santos Aveiro,Portugal,Real Madrid,94,Right,LW,92,92,81,91,33,80,2017
+158023,L. Messi,Lionel Andrés Messi Cuccittini,Argentina,FC Barcelona,93,Left,RW,89,90,86,96,26,61,2017
+190871,Neymar,Neymar da Silva Santos Junior,Brazil,FC Barcelona,92,Right,LW,91,84,78,95,30,56,2017
+188545,R. Lewandowski,Robert Lewandowski,Poland,FC Bayern München,90,Right,ST,81,87,74,85,38,82,2017
+155862,Sergio Ramos,Sergio Ramos García,Spain,Real Madrid,89,Right,LCB,78,63,70,71,87,83,2017
+192985,K. De Bruyne,Kevin De Bruyne,Belgium,Manchester City,88,Right,RCM,77,83,86,84,40,75,2017
+189509,Thiago,Thiago Alcântara do Nascimento,Spain,FC Bayern München,84,Right,LCM,72,75,82,89,57,62,2017
+209331,M. Salah,Mohamed  Salah Ghaly,Egypt,Roma,81,Left,RW,91,72,70,86,45,65,2017
+208722,S. Mané,Sadio Mané,Senegal,Liverpool,79,Right,RW,92,73,70,82,35,67,2017
+203376,V. van Dijk,Virgil van Dijk,Netherlands,Southampton,79,Right,LCB,67,61,65,67,79,83,2017
+158023,L. Messi,Lionel Andrés Messi Cuccittini,Argentina,FC Barcelona,94,Left,RW,92,88,86,95,24,62,2016
+20801,Cristiano Ronaldo,Cristiano Ronaldo dos Santos Aveiro,Portugal,Real Madrid,93,Right,LM,92,93,80,91,33,78,2016
+190871,Neymar,Neymar da Silva Santos Junior,Brazil,FC Barcelona,88,Right,LW,90,80,72,92,30,57,2016
+188545,R. Lewandowski,Robert Lewandowski,Poland,FC Bayern München,87,Right,ST,80,85,74,84,38,80,2016
+155862,Sergio Ramos,Sergio Ramos García,Spain,Real Madrid,87,Right,LCB,79,63,72,69,87,81,2016
+192985,K. De Bruyne,Kevin De Bruyne,Belgium,Manchester City,86,Right,CAM,77,83,86,84,40,75,2016
+189509,Thiago,Thiago Alcântara do Nascimento,Spain,FC Bayern München,83,Right,LDM,72,75,81,89,57,64,2016
+209331,M. Salah,Mohamed  Salah Ghaly,Egypt,Roma,80,Left,RW,91,72,71,85,45,65,2016
+208722,S. Mané,Sadio Mané,Senegal,Southampton,78,Right,CAM,91,73,70,81,35,64,2016
+158023,L. Messi,Lionel Andrés Messi Cuccittini,Argentina,FC Barcelona,93,Left,CF,93,89,86,96,27,63,2015
+20801,Cristiano Ronaldo,Cristiano Ronaldo dos Santos Aveiro,Portugal,Real Madrid,92,Right,LW,93,93,81,91,32,79,2015
+188545,R. Lewandowski,Robert Lewandowski,Poland,FC Bayern München,87,Right,LS,80,84,74,85,39,78,2015
+155862,Sergio Ramos,Sergio Ramos García,Spain,Real Madrid,87,Right,LCB,79,61,71,66,87,82,2015
+190871,Neymar,Neymar da Silva Santos Junior,Brazil,FC Barcelona,86,Right,LW,90,80,72,92,30,58,2015
+189509,Thiago,Thiago Alcântara do Nascimento,Spain,FC Bayern München,81,Right,SUB,72,72,79,87,57,65,2015
+192985,K. De Bruyne,Kevin De Bruyne,Belgium,VfL Wolfsburg,81,Right,LM,77,80,80,82,41,69,2015
+209331,M. Salah,Mohamed  Salah Ghaly,Egypt,Chelsea,76,Left,SUB,93,65,70,83,48,64,2015
+203376,V. van Dijk,Virgil van Dijk,Netherlands,Celtic,75,Right,LCB,70,58,60,68,75,82,2015
+208722,S. Mané,Sadio Mané,Senegal,Southampton,74,Right,SUB,90,70,69,78,34,61,2015
