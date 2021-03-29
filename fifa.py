@@ -1,6 +1,7 @@
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+
 import dash 
 import dash_core_components as dcc
 import dash_html_components as html
@@ -10,7 +11,8 @@ app = dash.Dash(__name__)
 
 # Import data 
 df = pd.read_csv("top.csv")
-
+df = df.groupby(['Year'])[['Overall']].mean()
+df.reset_index(inplace=True)
 # print(df[:5])
 
 # App layout
@@ -29,8 +31,27 @@ app.layout = html.Div([
                 style={'width': "40%"}
                 ),
 
-  dcc.Graph(id = 'my_bee_map', figure = {})
+  dcc.Graph(id = 'line-chart', figure = {})
 ])
+
+# callback
+
+@app.callback(
+  [Output(component_id='line-chart', component_property='figure')],
+  [Input(component_id = 'player_selection', component_property='value')]
+)
+
+# plotly express
+
+def update_line_chart(player_selection):
+  print(player_selection)
+  fig = px.line(
+    data_frame=df,
+    x='Year',
+    y='Overall',
+    color='Overall'
+  )
+  return fig
 
 # display web
 
