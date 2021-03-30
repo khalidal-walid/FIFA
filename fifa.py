@@ -32,8 +32,8 @@ app.layout = html.Div([
                 {'label': 'K. De Bruyne', 'value': 'K. De Bruyne'},
                 {'label': 'M. Salah', 'value': 'M. Salah'},
                 {'label': 'V. van Dijk', 'value': 'V. van Dijk'},
-                {'label': 'S. Mane', 'value': 'S. Mane'},
-                {'label': 'K. Mbappe', 'value': 'K. Mbappe'}],
+                {'label': 'S. Mané', 'value': 'S. Mané'},
+                {'label': 'K. Mbappé', 'value': 'K. Mbappé'}],
                 
                 multi = False,
                 value = 'R. Lewandowski'
@@ -53,13 +53,17 @@ app.layout = html.Div([
 
 def update_line_chart(player_selection):
   # print(player_selection)
-  fig = px.line(
-    data_frame = df,
+
+  dff = df.copy()
+  dff = dff[dff["Name"] == player_selection]
+
+  figure = px.line(
+    data_frame = dff,
     x='Year',
     y='Overall',
     color='Name'
   )
-  return fig
+  return figure
 
 # display web
 
