@@ -11,8 +11,8 @@ app = dash.Dash(__name__)
 
 # Import data 
 df = pd.read_csv("top.csv")
-df = df.groupby(['Year'])[['Overall']].mean()
-df.reset_index(inplace=True)
+# df = df.groupby(['Year', 'Name'])[['Overall']].mean()
+# df.reset_index(inplace=True)
 # print(df[:5])
 
 # App layout
@@ -23,12 +23,20 @@ app.layout = html.Div([
 
   dcc.Dropdown (id = 'player_selection',
               options = [
-                {'label': 'Robert Lewandowski', 'value': 'R. Lewandowski'},
-                {'label': 'Lionel Messi', 'value': 'L. Messi'}],
+                {'label': 'R. Lewandowski', 'value': 'R. Lewandowski'},
+                {'label': 'L. Messi', 'value': 'L. Messi'},
+                {'label': 'Cristiano Ronaldo', 'value': 'Cristiano Ronaldo'},
+                {'label': 'Sergio Ramos', 'value': 'Sergio Ramos'},
+                {'label': 'Neymar', 'value': 'Neymar'},
+                {'label': 'Thiago', 'value': 'Thiago'},
+                {'label': 'K. De Bruyne', 'value': 'K. De Bruyne'},
+                {'label': 'M. Salah', 'value': 'M. Salah'},
+                {'label': 'V. van Dijk', 'value': 'V. van Dijk'},
+                {'label': 'S. Mane', 'value': 'S. Mane'},
+                {'label': 'K. Mbappe', 'value': 'K. Mbappe'}],
                 
                 multi = False,
-                value = 'R. Lewandowski',
-                style={'width': "40%"}
+                value = 'R. Lewandowski'
                 ),
 
   dcc.Graph(id = 'line-chart', figure = {})
@@ -37,19 +45,19 @@ app.layout = html.Div([
 # callback
 
 @app.callback(
-  [Output(component_id='line-chart', component_property='figure')],
+  Output(component_id='line-chart', component_property='figure'),
   [Input(component_id = 'player_selection', component_property='value')]
 )
 
 # plotly express
 
 def update_line_chart(player_selection):
-  print(player_selection)
+  # print(player_selection)
   fig = px.line(
-    data_frame=df,
+    data_frame = df,
     x='Year',
     y='Overall',
-    color='Overall'
+    color='Name'
   )
   return fig
 
