@@ -36,7 +36,12 @@ app.layout = html.Div([
                 {'label': 'K. Mbappé', 'value': 'K. Mbappé'}],
                 
                 multi = False,
-                value = 'R. Lewandowski'
+                # style = {"width": "40%", "margin-left": "2rem"},
+                style=dict(
+                    width='40%',
+                ),
+                value = 'R. Lewandowski',
+                clearable=False
                 ),
 
   dcc.Graph(id = 'line-chart', figure = {})
@@ -63,6 +68,26 @@ def update_line_chart(player_selection):
     y='Overall',
     color='Name'
   )
+
+  figure.add_trace (
+    go.Scatter(
+      x=dff['Year'],
+      y=dff['Overall'],
+      text=dff['Overall'],
+      mode='markers+text',
+      marker=dict(color='black', size=5),
+      textfont=dict(color='black', size=13),
+      textposition='top left',
+    )
+  )
+
+  figure.update_layout(
+    plot_bgcolor='white',
+    showlegend=False,
+    # xaxis=dict(linecolor='gray'),
+    yaxis=dict(linecolor='gray')
+  )
+
   return figure
 
 # display web
