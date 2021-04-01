@@ -7,6 +7,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
+# Initialise the app
 app = dash.Dash(__name__)
 
 # Import data 
@@ -16,7 +17,6 @@ df = pd.read_csv("top.csv")
 # print(df[:5])
 
 # App layout
-
 app.layout = html.Div([
   
   html.H1("FIFA Ballon D'Or 2020", style = {'text-align': 'center'}),
@@ -48,14 +48,12 @@ app.layout = html.Div([
 ])
 
 # callback
-
 @app.callback(
   Output(component_id='line-chart', component_property='figure'),
   [Input(component_id = 'player_selection', component_property='value')]
 )
 
 # plotly express
-
 def update_line_chart(player_selection):
   # print(player_selection)
 
@@ -90,7 +88,6 @@ def update_line_chart(player_selection):
 
   return figure
 
-# display web
-
+# Run the app
 if __name__ == '__main__':
   app.run_server(debug=True)
