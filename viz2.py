@@ -29,19 +29,22 @@ app.layout = html.Div(
         # Define left element
         html.Div(className='four columns div-user-controls',
                 children = [
-                  html.H1('Fifa'),
+                  # html.H1('Fifa'),
                   # html.P('try and testing'),
 
                    html.Div(
                      className='div-for-dropdown',
                       children=[
-                         dcc.Dropdown(id='player_selection', options=get_options(df['Name'].unique()),
-                                      multi=False, value=[df['Name'].sort_values()[0]],
+                         dcc.Dropdown(id='player_selection', 
+                                      options=get_options(df['Name'].unique()),
+                                      multi=False, 
+                                      value=[df['Name'].sort_values()[0]],
                                       style={'backgroundColor': '#1E1E1E'},
                                       className='player_selection'
                                       ),
                                 ],
-                                     style={'color': '#1E1E1E'})
+                                    #  style={'color': '#1E1E1E'}
+                    )
                 ]
         ),
 
@@ -49,8 +52,8 @@ app.layout = html.Div(
         html.Div(className='eight columns div-for-charts bg-grey',
                   children=[
                     dcc.Graph(id='line-chart',
-                              config={'displayModeBar': False},
-                              animate=True,
+                              # config={'displayModeBar': False},
+                              # animate=True,
                               figure=px.line(df,
                                             x='Year',
                                             y='Overall',
@@ -80,7 +83,29 @@ def update_line_chart(player_selection):
     data_frame = dff,
     x='Year',
     y='Overall',
-    color='Name'
+    color='Name',
+    template='plotly_dark'
+  )
+
+  figure.add_trace (
+    go.Scatter(
+      x=dff['Year'],
+      y=dff['Overall'],
+      text=dff['Overall'],
+      mode='markers+text',
+      marker=dict(color='lightgray', size=5),
+      textfont=dict(color='lightgray', size=13),
+      textposition='top left',
+    )
+  )
+
+  figure.update_layout(
+    showlegend=False,
+    plot_bgcolor= 'rgba(0, 0, 0, 0)',
+    paper_bgcolor= 'rgba(0, 0, 0, 0)'
+    # plot_bgcolor='white',
+    # xaxis=dict(linecolor='gray'),
+    # yaxis=dict(linecolor='gray')
   )
 
   return figure
@@ -88,4 +113,5 @@ def update_line_chart(player_selection):
 
 # Run the App
 if __name__ == '__main__':
-  app.run_server(debug=True)
+  app.run_server()
+  # app.run_server(debug=True)
